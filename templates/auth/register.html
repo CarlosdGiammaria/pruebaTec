@@ -1,0 +1,53 @@
+{% with messages = get_flashed_messages()%}
+{% if messages %}
+{% for messages in messages %}
+<p>{{messages}}</p>
+{% endfor %}
+{% endif %}
+
+{%endwith%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=" {{ url_for('static', filename='css/normalize.css') }}">
+  <link rel="stylesheet" href=" {{ url_for('static', filename='css/styles.css') }}">
+
+  <link rel="stylesheet" href=" {{url_for('static', filename='css/login.css')}}">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/registro.css')}}">
+
+  <title>Registro</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="container__children">
+      <div class="container__formulario">
+        <h3 class="header__title">Registro</h3>
+        <form action='/add_user' method='POST' class="form">
+          <div class="form__campo">
+            <input type="text" name="username" id="username" placeholder="username" class="form__input-text">
+          </div>
+          <div class="form__campo">
+            <input type="password" name="password" id="password" placeholder="password" class="form__input-text">
+          </div>
+          <div class="form__campo">
+            <input type="text" name="fullname" id="fullname" placeholder="fullname" class="form__input-text">
+          </div>
+          <div><button type="submit" class="button text-uppercase"> Guardar</button></div>
+        </form>
+      </div>
+
+    </div>
+    <div></div>
+    </div>
+  </main>
+  <script src="/js/firebase.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+/* login */
+
+.main {
+  display: grid;
+  place-content: center; /* con esas dos linea centramos todo el contenido */
+  background-color: rgba(171, 167, 167, 0.744);
+}
+
+.login{
+  min-height: 100vh;
+  /* esto hace que el contenedor tenga un alto correspondiente al contenedor padre */
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.login__info {
+  background-image: url('../img/img-study.jpg'); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px 0 0 8px;
+  color: #fefefe;
+  font-family: var(--fuenteSecundaria);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.login__text {
+  line-height: 2rem;
+}
+
+.login__descripcion {
+  padding: 0 2rem;
+}
+
+.login__contenido {
+  display: grid;
+  gap: 1rem;
+}
+
+/* formulario */
+
+.formulario {
+  background-color: #ffffff51;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+ }
+
+.form__title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.form {
+  font-family: var(--fuenteSecundaria);
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+  font-size: var(--fuentePrincipal);
+}
+
+.form__contenedor {
+  width: 25rem;
+  background-color: var(--blanco);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.form__input {
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  flex: 1;
+}
+
+.form__contenedor,
+.form__input:hover {
+  cursor: pointer;
+}
+.alert{
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+
+.aviso-regsitro{
+  display: flex;
+  margin-top: 50px;
+  gap:30px
+}
+.link{
+  text-decoration: none;
+  color: var(--verde);
+  font-family: var(--fuenteSecundaria);
+}
+.link:hover{
+  transition: all 0.5s;
+  color:var(--madera)
+}
+
+
+@media (max-width:770px) {
+  .login__info {
+    display: none
+  }
+
+  .login {
+    grid-template-columns: 1fr;
+    /* Hacer que el elemento restante ocupe todo el espacio disponible */
+  }
+
+  .main{
+    display: flex;
+  }
+
+  .form{
+    gap:3rem
+  }
+  .form__contenedor{
+    padding: 20px 16;
+    width: 300px;
+  }
+
+  .aviso-regsitro{
+    display: flex;
+    margin-top: 50px;
+    gap:20px;
+    text-align: center;
+  }
+  .link{
+    font-size: 16px;
+  }
+}

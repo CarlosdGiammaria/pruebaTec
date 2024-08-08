@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Signika+Negative:wght@300..700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+:root {
+  --fuentePrincipal: "Nunito", sans-serif;
+  --fuenteSecundaria: "Signika Negative", sans-serif;
+  --blanco: #fff;
+  --negro: #000;
+  --verde: #478d91;
+  --madera: #f4ac42;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fuentePrincipal);
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.header__title {
+  text-transform: uppercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-big {
+  font-size: 2.5rem
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header {
+  background-image: url('static/img/img-study.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--blanco);
+  min-height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* button */
+.button {
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--blanco);
+  background-color: var(--verde);
+}
+
+.button:hover {
+  transition: ease 0.6s;
+  background-color: var(--madera);
+
+}
