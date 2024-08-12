@@ -4,7 +4,7 @@ class DevelopmentConfig():
   """ Conexión con la base de datos MYSQL """
   MYSQL_HOST = 'localhost'
   MYSQL_USER = 'root'
-  MYSQL_PASSWORD = ''
+  MYSQL_PASSWORD = '123456789'
   MYSQL_DB= 'crudpy'
 
 
